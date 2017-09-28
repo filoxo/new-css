@@ -1,0 +1,26 @@
+:root {
+  --primary: #34495e;
+  --secondary: #871a1a;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  font-family: system-ui;
+}
+
+button {
+  border: none;
+  background: #fffa;
+  color: #fff;
+  &.primary {
+      background: var(--primary);
+  }
+  &.secondary {
+      background: var(--secondary);
+  }
+}
+
+a, .link {
+    color: var(--primary);
+}
