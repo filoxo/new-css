@@ -1,0 +1,9 @@
+{
+  "name": "new-css",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2"
+  }
+}
