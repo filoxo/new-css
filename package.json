@@ -5,5 +5,8 @@
   "dependencies": {
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2"
+  },
+  "scripts": {
+    "build": "postcss 'src/main.css' -o 'dist/main.min.css'"
   }
 }
