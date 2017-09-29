@@ -7,6 +7,7 @@
     "postcss-cssnext": "^3.0.2"
   },
   "scripts": {
-    "build": "postcss 'src/main.css' -o 'dist/main.min.css'"
+    "build": "postcss 'src/main.css' -o 'dist/main.min.css'",
+    "build:watch": "npm run build -- -w"
   }
 }
