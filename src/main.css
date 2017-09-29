@@ -1,6 +1,8 @@
 :root {
   --primary: #34495e;
   --secondary: #871a1a;
+  --muted: #0008;
+  --transition: .25s all ease-in-out;
 }
 
 body {
@@ -11,13 +13,27 @@ body {
 
 button {
   border: none;
-  background: #fffa;
+  background: #fff;
   color: #fff;
   &.primary {
       background: var(--primary);
+      transition: var(--transition);
+      &:hover {
+        background: color(var(--primary) lightness(+10%))
+      }
+      &:active {
+        background: color(var(--primary) blackness(+10%))
+      }
   }
   &.secondary {
       background: var(--secondary);
+      transition: var(--transition);
+      &:hover {
+        background: color(var(--secondary) l(+10%))
+      }
+      &:active {
+        background: color(var(--primary) b(+10%))
+      }
   }
 }
 
