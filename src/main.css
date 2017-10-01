@@ -1,42 +1,65 @@
+/* Important styles for demo */
 :root {
-  --primary: #34495e;
-  --secondary: #871a1a;
+  --us-primary: #3A539B; 
+  --us-secondary: #B50000;
+
+  --mx-primary: #8B0000; 
+  --mx-secondary: #00552a; 
+
+  --ca-primary: #A00; 
+  --ca-secondary: #555;
+  
+  --primary: var(--us-primary);
+  --secondary: var(--us-secondary);
   --muted: #0008;
-  --transition: .25s all ease-in-out;
+  --transition: .1s transform ease-in-out;
+  font-size: 18px;
 }
 
 body {
-  background: #fff;
-  color: #333;
   font-family: system-ui;
 }
 
 button {
-  border: none;
-  background: #fff;
-  color: #fff;
+  font-size: 1rem;
   &.primary {
       background: var(--primary);
       transition: var(--transition);
       &:hover {
-        background: color(var(--primary) lightness(+10%))
+        transform: scale(1.1);
       }
       &:active {
-        background: color(var(--primary) blackness(+10%))
+        transform: translateY(5%);
       }
   }
   &.secondary {
       background: var(--secondary);
       transition: var(--transition);
       &:hover {
-        background: color(var(--secondary) l(+10%))
+        transform: scale(1.1);
       }
       &:active {
-        background: color(var(--primary) b(+10%))
+        transform: translateY(5%);
       }
   }
 }
 
 a, .link {
-    color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Other styles */
+:root {
+  line-height: 1.4;
+}
+body {
+  background: #fff;
+  color: #333;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  color: #fff;
+  padding: .5em .75em;
 }
