@@ -2,6 +2,11 @@
   "name": "new-css",
   "version": "1.0.0",
   "license": "MIT",
+  "main": "dist/main.min.css",
+  "files": [
+    "dist/main.min.css",
+    "src/main.css"
+  ],
   "dependencies": {
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2"
