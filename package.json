@@ -18,7 +18,7 @@
   "scripts": {
     "build": "postcss 'src/main.css' -o 'dist/main.min.css'",
     "build:watch": "npm run build -- -w",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "serve": "lr-http-server",
     "start": "npm-run-all -p build:watch serve"
   }
