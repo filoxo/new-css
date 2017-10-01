@@ -6,6 +6,10 @@
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2"
   },
+  "devDependencies": {
+    "lr-http-server": "^0.1.5",
+    "npm-run-all": "^4.1.1"
+  },
   "scripts": {
     "build": "postcss 'src/main.css' -o 'dist/main.min.css'",
     "build:watch": "npm run build -- -w"
