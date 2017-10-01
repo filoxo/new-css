@@ -12,6 +12,8 @@
   },
   "scripts": {
     "build": "postcss 'src/main.css' -o 'dist/main.min.css'",
-    "build:watch": "npm run build -- -w"
+    "build:watch": "npm run build -- -w",
+    "serve": "lr-http-server",
+    "start": "npm-run-all -p build:watch serve"
   }
 }
