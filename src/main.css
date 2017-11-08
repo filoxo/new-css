@@ -13,6 +13,7 @@
   --secondary: var(--us-secondary);
   --muted: #0008;
   --transition: .1s transform ease-in-out;
+  --borderRadius: 3px;
   font-size: 18px;
 }
 
@@ -67,11 +68,25 @@ body {
 }
 button {
   border: none;
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
   background: transparent;
   color: #fff;
   padding: .5em .75em;
 }
 .brand {
   text-shadow: 2px 2px 0 #fff, 4px 4px 0 var(--primary);
+}
+.card {
+  border: var(--borderRadius) solid var(--primary);
+  border-radius: var(--borderRadius);
+  padding: 0 1em;
+}
+.row {
+  display: flex;
+}
+.row > *:not(:first-child) {
+  margin-left: .25em;
+}
+.row > *:not(:last-child) {
+  margin-right: .25em;
 }
