@@ -88,6 +88,9 @@ button {
 .row {
   display: flex;
 }
+.row > * {
+  flex: 1;
+}
 .row > *:not(:first-child) {
   margin-left: .25em;
 }
