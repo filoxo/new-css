@@ -1,14 +1,14 @@
 /* Important styles for demo */
 :root {
-  --us-primary: #3A539B; 
+  --us-primary: #3A539B;
   --us-secondary: #B50000;
 
-  --mx-primary: #8B0000; 
-  --mx-secondary: #00552a; 
+  --mx-primary: #8B0000;
+  --mx-secondary: #00552a;
 
-  --ca-primary: #A00; 
+  --ca-primary: #A00;
   --ca-secondary: #555;
-  
+
   --primary: var(--us-primary);
   --secondary: var(--us-secondary);
   --muted: #0008;
@@ -20,6 +20,15 @@ body {
   font-family: system-ui;
 }
 
+h1, h2, h3, h4, h5, h6 { margin: .5rem 0; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+p { margin: .5rem 0; }
+.light { font-weight: 300; }
 button {
   font-size: 1rem;
   &.primary {
@@ -62,4 +71,7 @@ button {
   background: transparent;
   color: #fff;
   padding: .5em .75em;
+}
+.brand {
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 var(--primary);
 }
